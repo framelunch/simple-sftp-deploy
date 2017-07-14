@@ -16,9 +16,9 @@ Node.jsからsftpでファイルをアップロードするコマンドがほし
 ### インストール
 
 ```bash
-npm i -D git+ssh://git@framelunch.com:framelunch/simple-sftp-deploy.git
+npm i -D framelunch/simple-sftp-deploy
 # or...
-yarn add -D git+ssh://git@framelunch.com:framelunch/simple-sftp-deploy.git
+yarn add -D framelunch/simple-sftp-deploy
 ```
 
 ### npmスクリプト追加
