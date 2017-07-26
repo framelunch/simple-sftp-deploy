@@ -1,12 +1,13 @@
 {
   "name": "simple-sftp-deploy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "deploy.js",
   "bin": {
     "simple-sftp-deploy": "bin/cmd.js"
   },
   "scripts": {
     "start": "DEPLOY_HOST=127.0.0.1 DEPLOY_PORT=22 DEPLOY_USER=dummyuser DEPLOY_PASS=dummypass DEPLOY_DIR_FROM_ROOT=package.json DEPLOY_TARGET=/tmp bin/cmd.js",
+    "start:key": "DEPLOY_HOST=127.0.0.1 DEPLOY_PORT=22 DEPLOY_USER=dummyuser DEPLOY_KEY_PATH=/Users/you/.ssh/id_rsa DEPLOY_KEY_PASSPHRASE=YOUR_KEY_PASSPHRASE_HERE DEPLOY_DIR_FROM_ROOT=package.json DEPLOY_TARGET=/tmp bin/cmd.js",
     "start:dir": "DEPLOY_HOST=127.0.0.1 DEPLOY_PORT=22 DEPLOY_USER=dummyuser DEPLOY_PASS=dummypass DEPLOY_DIR_FROM_ROOT=bin DEPLOY_TARGET=/tmp bin/cmd.js"
   },
   "license": "MIT",
